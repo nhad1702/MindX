@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="head">
+    <header class="heading">
         <div class="title">
             <h1 style="font-size: larger;">PROTFOLIO</h1>
             <p>Made by <a href="https://www.facebook.com/nhad1702" style="color: aliceblue;" target="_blank">Anh Duc</a></p>
@@ -17,11 +17,12 @@
             <a href="#myself">Myself</a>
             <a href="#carrier">Carrier</a>
             <a href="#contact">Contact</a>
+            <div>
+                <button style="display: flex; align-items: center; justify-content: center; height: 50px; width: 50px; border: none; position: relative; cursor: pointer; background: gray; left: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </button>
+            </div>
         </nav>
-        <div class="log">
-            <i class="fa-regular fa-user"></i>
-            <h3><a href="" style="color: aliceblue;">Login</a></h3>
-        </div>
     </header>
     <hr>
     <main class="word">
@@ -31,14 +32,64 @@
                 <h3>Welcome to my portfolio. I'm Anh Duc from UIT</h>
             </div>
         </div>
-        <!-- <hr> -->
-        <section id="myself"></section>
-        <!-- <hr> -->
-        <section id="carrier"></section>
-        <!-- <hr> -->
-        <section id="contact"></section>
+        <hr>
+        <div class="myself" id="myself">
+            <div>
+                <h1>Personal Information</h1>
+                <p>Full name: Nguyen Huu Anh Duc</p>
+                <p>Age: 18</p>
+                <p>Gender: Male</p>
+                <p>School: UIT</p>
+                <p>Major: Computer Science</p>
+                <p>Hobbies:</p>
+                <ul>
+                    <li>Basketball</li>
+                    <li>Badminton</li>
+                    <li>Video games</li>
+                    <li>Music</li>
+                    <li>Coding</li>
+                </ul>
+            </div>
+            <div>
+                <img 
+                    src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/351223361_1847002912363226_4950871955519547952_n.jpg?stp=dst-jpg_s851x315&_nc_cat=101&ccb=1-7&_nc_sid=3d9721&_nc_ohc=_k8Yp_Ql3H0AX_UkjL1&_nc_ht=scontent.fsgn5-8.fna&oh=00_AfCuYERTOlf2ItdeS6SOUhqZYhZSerd_8VbeCYHRe5PT5A&oe=6579E0B3" 
+                    alt=""
+                    style="height: 500px; width: 500px;"
+                >
+            </div>
+        </div>
+        <hr>
+        <div class="carrier" id="carrier">
+            <h1 style="margin-bottom: 5%;">My Carrier</h1>
+            <div class="project">
+                <div style="margin: 0 5%;">
+                    <h3>Projects that I've done</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div style="margin: 0 5%;">
+                    <h3>Projects that will start in the future</h3>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="contact" id="contact">
+            <h1>If you have anything to ask please contact me down below</h1>
+            <div style="margin: 5% 0;">
+                <button style="height: 50px; width: 200px; text-align: center; cursor: pointer; border-radius: 10px; background: gray; color: aliceblue" class="btnSub" id="clickOn" onclick="contact()">Contact me</button>
+            </div>
+        </div>
     </main>
-    <!-- <hr> -->
     <footer>
 
     </footer>
