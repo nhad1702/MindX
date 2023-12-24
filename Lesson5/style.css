@@ -273,6 +273,7 @@ section.home {
     section {
         padding: 100px;
     }
+    
     .service {
         grid-template-columns: repeat(3, 1fr);
     }
