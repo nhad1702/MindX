@@ -251,8 +251,6 @@ section.home {
     .service .servItem:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     }
-
-
 }
 
 @media(min-width: 1068px) {
@@ -291,5 +289,10 @@ section.home {
     }
     .contactForm .row {
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contactForm .row .inp50 {
+        width: 400px;
     }
 }

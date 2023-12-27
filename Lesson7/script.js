@@ -1,17 +1,11 @@
 function bangCuuChuong(n) {
-    for (i = 1; i < 11; i++) {
-        console.log(n * i);
+    for (let i = 1; i <= 10; i++) {
+        console.log(n + " " + "*" + " " + i + " " + "=" + " " + (n * i));
     }
 }
 
-bangCuuChuong(2);
+bangCuuChuong(8);
 /*-------------------------*/
-function getAge(x) {
-    x = promt("Type your year born: ");
-    let age = new Date.getFullYear() - x;
-    console.log(age)
-}
-/* Or */
 function getAge(x) {
     let d = new Date();
     let year = d.getFullYear();
@@ -52,7 +46,22 @@ function findNum(arr, n) {
 console.log(findNum([2, 5, 7, 6, 8, 1, 3], 1));
 /*--------------------------------------------*/
 function numPow(x, y) {
-    return x ** y;
+    for (let i = 1; i < y; i++) {
+        if (y == 1) {
+            let sum = x;
+            return sum;
+        } else if (y == 0) {
+            let sum = 1;
+            return sum;
+        } else if (x = 0) {
+            let sum = 0;
+            return sum;
+        } else {
+            let sum = x;
+            sum *= x;
+            return sum;
+        }
+    }
 }
 
 console.log(numPow(2, 3));
@@ -124,20 +133,20 @@ for (let i = 0; i < arr1.length; i++) {
 
 console.log(arr3);
 /*-----------------------------------*/
-arr = [2, 5, 6, 3, 5, 9];
-arr.push(0, 8, 1);
+arr1 = [2, 5, 6, 3, 5, 9];
+arr1.push(0, 8, 1);
 console.log(arr);
-arr.shift();
+arr1.shift();
 console.log(arr);
-arr.splice(2, 2);
+arr1.splice(2, 2);
 console.log(arr);
-arr.splice(2, 0, 7);
+arr1.splice(2, 0, 7);
 console.log(arr);
-arr.pop();
+arr1.pop();
 console.log(arr);
-arr.sort();
+arr1.sort();
 console.log(arr);
-arr.sort().reverse();
+arr1.sort().reverse();
 console.log(arr);
 /*---------------------*/
 bob = [5000, 4300, 4000, 5800, 6000, 4500, 3000];
