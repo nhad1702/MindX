@@ -19,6 +19,9 @@ body {
 header {
     background-color: #003f3b;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+    gap: 0.5rem;
+    padding: 10px 0;
+    width: 100%;
 }
 
 .navbar {
