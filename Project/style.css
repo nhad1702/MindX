@@ -18,7 +18,7 @@ body {
 
 header {
     background-color: #003f3b;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: rgb(255, 255, 255);
     gap: 0.5rem;
     padding: 10px 0;
     width: 100%;
@@ -52,4 +52,21 @@ section {
 .intro {
     background-image: url(img/mainWeb.png);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    padding: 0 50px;
+}
+
+.signUp {
+    background-color: rgb();
+    height: 50vh;
 }
