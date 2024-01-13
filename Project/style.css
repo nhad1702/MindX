@@ -14,11 +14,11 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
-h1, .title1, .expert, .hiking h1, .tren h1, .duoi h1 {
+h1, .title1, .expert, .hiking h1, .tren h1, .duoi h1, .findTour div {
     font-size: 32px;
     line-height: 46px;
     font-weight: 700;
@@ -82,8 +82,37 @@ section {
 }
 
 .signUp {
-    background-color: rgb();
-    height: 60vh;
+    height: 80vh;
+    padding: 76px 90px;
+    background-color: rgb(240, 235, 219);
+    .find {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        .findTour {
+            width: 50%;
+            max-width: 381px;
+        }
+        p {
+            font-family: var(--secondary-font-family);
+            font-style: normal;
+            text-align: justify;
+        }
+        .safe {
+            width: 25%;
+        }
+        .item-content {
+            padding-bottom: 1.25rem;
+            display: flex;
+            h3 {
+                font-family: var(--primary-font-family);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 26px;
+            }
+        }
+    }
 }
 
 .heading {
@@ -102,7 +131,7 @@ section {
     padding-bottom: 1rem;
 }
 
-h1 span, .title1 span, .expert span, .tren span, .duoi span {
+h1 span, .title1 span, .expert span, .tren span, .duoi span, .findTour span {
     color: var(--primary-span-color);
     font-size: 32px;
     line-height: 46px;
@@ -175,6 +204,7 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span {
     height: 7px;
     background-color: #dacda5;
 }
+
 .pros {
     height: 100vh;
     width: 100%;
@@ -281,6 +311,7 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span {
     background: var(--primary-background-color);
     border-radius: 5px;
     padding: 0.5rem 1.25rem;
+    cursor: pointer
 }
 
 .btn-primary a {
@@ -450,8 +481,82 @@ h1 span, .title1 span, .expert span, .tren span, .duoi span {
     }
 }
 
-.footer {
+footer {
     height: 70vh;
     background-color: var(--primary-background-color);
     padding: 0 15px;
+    color: #fff;
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 29px;
+        display: flex;
+        flex-direction: row;
+        a {
+            text-decoration: none;
+        }
+        .half-width {
+            width: 50%;
+            .endTitle {
+                padding-top: 4rem;
+                padding-bottom: 0.75rem;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                img {
+                    padding: 0.75rem 0.75rem 0.75rem 0;
+                }
+                h2 {
+                    padding-top: 1.25rem;
+                    font-size: var(--primary-font-family);
+                    font-weight: 700;
+                    font-style: normal;
+
+                }
+            }
+            .contact {
+                padding-bottom: 1.25rem;
+                font-family: var(--secondary-font-family);
+                img {
+                    padding-right: 0.5rem;
+                }
+                li {
+                    padding: 0.75rem 0;
+                }
+            }
+            li {
+                list-style: none;
+                font-family: var(--secondary-font-family)
+            }
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            padding: 4rem 0 1.25rem 1rem;
+            div {
+                width: 250px;
+                height: 168px;
+            }
+            h2 {
+                font-family: var(--primary-font-family);
+                font-style: normal;
+                font-size: 700;
+                font-size: 17px;
+                line-height: 26px;
+            }
+            li {
+                padding-top: 1rem;
+            }
+        }
+    }
+    .credit {
+        border-top: 1px solid #fff;
+        padding-top: 1.75rem;
+        font-family: var(--primary-font-family);
+        font-style: normal;
+        p {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+        }
+    }
 }
