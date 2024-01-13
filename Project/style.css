@@ -1,14 +1,16 @@
 :root {
-    --primary-background-color: #006400;
+    --primary-background-color: #003f3b;
     --primary-dark-background-color: #080808;
-    --tw-text-opacity: 1; 
+    --primary-span-color: #f46036;
+    --primary--title-color: #fff;
+    --primary-font-family: 'Livvic', sans-serif;
+    --secondary-font-family: 'Quicksand', sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -16,20 +18,21 @@ body {
     width: 100%;
 }
 
-h1, .title1 {
-    font-size: 32px !important;
-    line-height: 46px !important;
-    font-weight: 700 !important;
-    font-family: 'Livvic', sans-serif;
+h1, .title1, .expert, .hiking h1, .tren h1, .duoi h1 {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: var(--primary-font-family);
     font-style: normal;
 }
 
 header {
-    background-color: #003f3b;
+    background-color: var(--primary-background-color);
     color: rgb(255, 255, 255);
     gap: 0.5rem;
     padding: 10px 0;
     width: 100%;
+    font-family: var(--primary-font-family);
 }
 
 .navbar {
@@ -47,6 +50,10 @@ header {
 
 .navi div {
     padding: 0 10px;
+}
+
+.setup {
+    font-family: var(--secondary-font-family);
 }
 
 .setup div {
@@ -95,17 +102,17 @@ section {
     padding-bottom: 1rem;
 }
 
-h1 span, .title1 span {
-    color: #f46036;
-    font-size: 32px !important;
-    line-height: 46px !important;
-    font-weight: 700 !important;
-    font-family: 'Livvic', sans-serif;
+h1 span, .title1 span, .expert span, .tren span, .duoi span {
+    color: var(--primary-span-color);
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: var(--primary-font-family);
     font-style: normal;
 }
 
 .heading p, .title1 p, .container p {
-    font-family: 'Livvic', sans-serif;
+    font-family: var(--primary-font-family);
     font-style: normal;
     text-align: justify;
     width: 50%;
@@ -113,7 +120,7 @@ h1 span, .title1 span {
 
 .journey {
     width: 100%;
-    height: 370vh;
+    height: 400vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -134,7 +141,7 @@ h1 span, .title1 span {
     display: grid;
     grid-template-columns: repeat(3, 0.1fr);
     grid-auto-rows: max-content;
-    gap: 20px;
+    gap: 30px;
 }
 
 .tours img {
@@ -153,7 +160,7 @@ h1 span, .title1 span {
 }
 
 .nameTitle {
-    color: #003f3b;
+    color: var(--primary-background-color);
     font-family: 'Livvic', sans-serif;
     font-weight: 700 !important;
 }
@@ -161,7 +168,7 @@ h1 span, .title1 span {
 .tours:hover {
     transform: scale(1.02);
     transition: 0.5s;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .space {
@@ -182,7 +189,7 @@ h1 span, .title1 span {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 75%;
+    width: 63%;
     margin-bottom: 0.5rem;
 }
 
@@ -218,15 +225,14 @@ h1 span, .title1 span {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    width: 100%;
 }
 
 .head2 {
-    font-family: 'Livvic', sans-serif !important;
-    font-style: normal !important;
-    font-weight: 700 !important;
-    font-size: 17px !important;
-    line-height: 26px !important;
+    font-family: 'Livvic', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 26px;
     text-align: center;
     padding-bottom: 0.5rem;
 }
@@ -234,4 +240,218 @@ h1 span, .title1 span {
 .nDung {
     width: 70%;
     text-align: center;
+}
+
+.prosPeople {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 125px;
+    background-color: #fff;
+    height: 70vh;
+}
+
+.leftExpert {
+    width: 50%;
+    padding: 1.25rem;
+}
+
+.expert {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.leftExpert p {
+    font-size: 17px;
+    line-height: 26px;
+    text-align: justify;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+.btn-primary {
+    margin-top: 1.5rem;
+    float: left;
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 26px;
+    width: auto;
+    color: var(--primary--title-color);
+    background: var(--primary-background-color);
+    border-radius: 5px;
+    padding: 0.5rem 1.25rem;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: var(--primary--title-color);
+}
+
+.rightExpert {
+    width: 50%;
+    margin: 1.5rem 0;
+}
+
+.listExpert {
+    touch-action: pan-y;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+    transition-duration: 0ms;
+}
+
+.list {
+    transition-duration: 0ms;
+    transform: translate3d(-1544px, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition-property: transform;
+    box-sizing: content-box !important;
+}
+
+.prop {
+    height: 50vh;
+    background-image: url(img/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prop {
+    padding: 125px 274px;
+    h1 {
+        font-family: var(--primary-font-family);
+        color: var(--primary--title-color);
+        padding-bottom: 1.25rem;
+
+    }
+    p {
+        font-family: var(--secondary-font-family);
+        font-size: 17px;
+        font-style: normal;
+        text-align: justify;
+        color: var(--primary--title-color);
+    }
+    .btn-more {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        padding: 0.5rem 1.25rem;
+        background: none;
+        border: 1px solid var(--primary--title-color);
+        color: var(--primary--title-color);
+        border-radius: 5px;
+    }
+}
+
+.social {
+    height: 100vh;
+    .tren {
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-size: 21px;
+            line-height: 30px;
+            font-family: var(--secondary-font-family);
+            text-align: center;
+        }
+
+        .grid-tempt {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20rem;
+            .media {
+                .markNum {
+                    font-family: 'Permanent Marker', cursive;
+                    color: var(--primary-span-color);
+                    font-weight: 400;
+                    font-size: 35px;
+                    line-height: 51px;
+                }
+                .view {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 0.75rem;
+                    }
+                    div p {
+                        text-align: left;
+                    }
+                    .titleTop {
+                        color: var(--primary-background-color);
+                        font-size: 26px;
+                        line-height: 34px;
+                        font-family: var(--primary-font-family);
+                        font-style: normal;
+                        font-weight: 700;
+                        padding-top: 0.75rem;
+                    }
+                    .titleBot {
+                        font-weight: 700;
+                        font-size: 21px;
+                        line-height: 30px;
+                        font-family: var(--primary-font-family);
+                        color: #ababab;
+                        margin-top: -10px;
+                    }
+                }
+            }
+        }
+    }
+    .duoi {
+        padding: 80px 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .grid-tempt2 {
+            display: grid;
+            grid-template-columns: repeat(6, 0.1fr);
+            gap: 1rem;
+            .holder {
+                height: 208px;
+                width: 208px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                padding-top: 100%;
+            }
+            .no1 {
+                background-image: url(img/bidoup.png);
+            }
+            .no2 {
+                background-image: url(img/intoWild.png);
+            }
+            .no3 {
+                background-image: url(img/decathlon.png);
+            }
+            .no4 {
+                background-image: url(img/scb.png);
+            }
+            .no5 {
+                background-image: url(img/vng.png);
+            }
+            .no6 {
+                background-image: url(img/vqg.png);
+            }
+        }
+    }
+}
+
+.footer {
+    height: 70vh;
+    background-color: var(--primary-background-color);
+    padding: 0 15px;
 }
