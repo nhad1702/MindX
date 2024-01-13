@@ -501,7 +501,8 @@ footer {
                 padding-bottom: 0.75rem;
                 display: flex;
                 flex-direction: row;
-                gap: 20px;
+                align-items: center;
+                gap: 5px;
                 img {
                     padding: 0.75rem 0.75rem 0.75rem 0;
                 }
